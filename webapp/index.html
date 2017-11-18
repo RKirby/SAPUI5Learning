@@ -14,12 +14,13 @@
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-             alert("UI5 is ready");
+             new sap.m.Button({
+             	text : "Hello World"
+             }).placeAt("content");
          });
       </script>
   </head>
-  <body>
+  <body class="sapUiBody" id="content">
     <!-- Sichtbarer Dokumentinhalt im body -->
-    <p>Hello World!</p>
   </body>
 </html>
