@@ -4,9 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aussagekräftiger Titel der Seite</title>
+    <script
+         id="sap-ui-bootstrap"
+         src="/resources/sap-ui-core.js" 
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-preload="async" >
+      </script>
+      <script>
+         sap.ui.getCore().attachInit(function () {
+             alert("UI5 is ready");
+         });
+      </script>
   </head>
   <body>
     <!-- Sichtbarer Dokumentinhalt im body -->
-    <p>Test der index.html</p>
+    <p>Hello World!</p>
   </body>
 </html>
