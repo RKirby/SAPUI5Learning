@@ -17,8 +17,8 @@
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-             sap.ui.xmlview({
-             	viewName : "clinny.tutorial.wt.view.App"
+             new sap.ui.core.ComponentContainer({
+             	name : "clinny.tutorial.wt"
              }).placeAt("content");
          });
       </script>
