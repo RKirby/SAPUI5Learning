@@ -38,12 +38,11 @@
 				"settings": {
 					"bundleName": "clinny.tutorial.wt.i18n.i18n"
 				}
+			},
+			"invoice": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Invoices.json"
 			}
-		},
-		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
 		}
 	}
 }
