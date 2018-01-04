@@ -19,7 +19,7 @@ sap.ui.define([
 
 			// build filter array
 			var aFilter = [];
-			var sQuery = oEvent.getParameter("query");
+			var sQuery = oEvent.getParameter("newValue");
 			if (sQuery) {
 				aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
 			}

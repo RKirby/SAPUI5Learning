@@ -10,7 +10,7 @@
 			<Toolbar>
 				<Title text="{i18n>invoiceListTitle}"/>
 				<ToolbarSpacer/>
-				<SearchField width="50%" search="onFilterInvoices" selectOnFocus="false"/>
+				<SearchField width="50%" liveChange="onFilterInvoices" selectOnFocus="false"/>
 			</Toolbar>
 		</headerToolbar>
 		<items>
