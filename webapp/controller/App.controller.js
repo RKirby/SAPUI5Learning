@@ -3,6 +3,9 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 	return Controller.extend("clinny.tutorial.wt.controller.App", {
+		onInit: function() {
+			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+		},
 		onOpenDialog: function() {
 			this.getOwnerComponent().openHelloDialog();
 		}

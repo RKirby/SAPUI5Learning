@@ -24,6 +24,8 @@ sap.ui.define([
 				oDialog = sap.ui.xmlfragment(oView.getId(), "clinny.tutorial.wt.view.HelloDialog", oFragmentController);
 				// connect dialog to the root view of this component (models, lifecycle)
 				oView.addDependent(oDialog);
+				
+				jQuery.sap.syncStyleClass(oView.getController().getOwnerComponent().getContentDensityClass(), oView, oDialog);
 			}
 			oDialog.open();
 		}
