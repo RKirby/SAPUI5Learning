@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
-	"clinny/tutorial/wt/controller/HelloDialog"
-], function(UIComponent, JSONModel, HelloDialog) {
+	"clinny/tutorial/wt/controller/HelloDialog",
+	"sap/ui/Device"
+], function(UIComponent, JSONModel, HelloDialog, Device) {
 	"use strict";
 	return UIComponent.extend("clinny.tutorial.wt.Component", {
 		metadata: {
@@ -20,9 +21,14 @@ sap.ui.define([
 			var oModel = new JSONModel(oData);
 			this.setModel(oModel);
 
+			// set device model
+			var oDeviceModel = new JSONModel(Device);
+			oDeviceModel.setDefaultBindingMode("OneWay");
+			this.setModel(oDeviceModel, "device");
+
 			//set Dialog
 			this._helloDialog = new HelloDialog(this.getRootControl());
-			
+
 			this.getRouter().initialize();
 		},
 		openHelloDialog: function() {
