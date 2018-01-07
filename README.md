@@ -1,2 +1,2 @@
 # SAPUI5Learning
-A learning tutorial for SAPUI5 / GIT / Development Bär
+A learning tutorial for SAPUI5 / GIT / Development Bärenattacke!
